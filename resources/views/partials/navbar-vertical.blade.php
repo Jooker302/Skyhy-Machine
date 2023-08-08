@@ -8,7 +8,7 @@
         <!-- Navbar nav -->
         <ul class="navbar-nav flex-column" id="sideNavbar">
             <li class="nav-item">
-                <a class="nav-link has-arrow @@if (context.page ===  'dashboard') { active }" href="@@webRoot/index.html">
+                <a class="nav-link has-arrow @@if (context.page ===  'dashboard') { active }" href="{{url('home')}}">
                     <i data-feather="home" class="nav-icon icon-xs me-2"></i>  Dashboard
                 </a>
 
@@ -16,9 +16,9 @@
 
 
          <!-- Nav item -->
-         <li class="nav-item">
+         {{-- <li class="nav-item">
             <div class="navbar-heading">Layouts & Pages</div>
-        </li>
+        </li> --}}
 
 
              <!-- Nav item -->
@@ -28,43 +28,43 @@
                     data-feather="layers"
 
                     class="nav-icon icon-xs me-2">
-                </i> Pages
+                </i> Machine
                 </a>
 
                 <div id="navPages" class="collapse @@if (context.page_group === 'pages') { show }" data-bs-parent="#sideNavbar">
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link @@if (context.page === 'profile') { active }" href="@@webRoot/pages/profile.html">
-                                Profile
+                                Add Machine
                 </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link has-arrow  @@if (context.page === 'settings') { active } "  href="@@webRoot/pages/settings.html" >
-                                Settings
+                                View
                                 </a>
 
                         </li>
 
 
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link @@if (context.page === 'billing') { active }" href="@@webRoot/pages/billing.html">
                                 Billing
                 </a>
-                        </li>
+                        </li> --}}
 
 
 
-
+{{--
                         <li class="nav-item">
                             <a class="nav-link @@if (context.page === 'pricing') { active }" href="@@webRoot/pages/pricing.html">
                                Pricing
                 </a>
-                        </li>
-                        <li class="nav-item">
+                        </li> --}}
+                        {{-- <li class="nav-item">
                             <a class="nav-link @@if (context.page === '404error') { active }" href="@@webRoot/pages/404-error.html">
                                 404 Error
                 </a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
 
@@ -72,7 +72,7 @@
 
 
                         <!-- Nav item -->
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link has-arrow @@if (context.page_group !== 'authentication') { collapsed }" href="#!" data-bs-toggle="collapse" data-bs-target="#navAuthentication" aria-expanded="false" aria-controls="navAuthentication">
                                 <i data-feather="lock" class="nav-icon icon-xs me-2">
                                 </i> Authentication
@@ -93,8 +93,8 @@
 
                                 </ul>
                             </div>
-                        </li>
-                        <li class="nav-item">
+                        </li> --}}
+                        {{-- <li class="nav-item">
                             <a class="nav-link @@if (context.page === 'layouts') { active }" href="@@webRoot/pages/layout.html">
                                 <i
                                     data-feather="sidebar"
@@ -105,23 +105,23 @@
                                       >
                                 Layouts
                             </a>
-                        </li>
+                        </li> --}}
 
                         <!-- Nav item -->
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <div class="navbar-heading">UI Components</div>
-                        </li>
+                        </li> --}}
 
                         <!-- Nav item -->
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link has-arrow @@if (context.page === 'docs') { active }" href="@@webRoot/docs/accordions.html" >
                                 <i data-feather="package" class="nav-icon icon-xs me-2" >
                             </i>  Components
                             </a>
-                         </li>
-                  
+                         </li> --}}
 
-                        <li class="nav-item">
+
+                        {{-- <li class="nav-item">
                             <a class="nav-link has-arrow @@if (context.page_group !== 'menulevel') { collapsed }" href="#!" data-bs-toggle="collapse" data-bs-target="#navMenuLevel" aria-expanded="false" aria-controls="navMenuLevel">
                                 <i
                                 data-feather="corner-left-down"
@@ -176,15 +176,15 @@
                                     </li>
                                 </ul>
                             </div>
-                        </li>
+                        </li> --}}
 
                                          <!-- Nav item -->
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <div class="navbar-heading">Documentation</div>
-                        </li>
+                        </li> --}}
 
                         <!-- Nav item -->
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link has-arrow @@if (context.page === 'docs') { active }" href="@@webRoot/docs/index.html" >
                                 <i data-feather="clipboard" class="nav-icon icon-xs me-2" >
                             </i>  Docs
@@ -195,7 +195,7 @@
                                 <i data-feather="git-pull-request" class="nav-icon icon-xs me-2" >
                             </i>  Changelog
                             </a>
-                         </li>
+                         </li> --}}
 
 
 
