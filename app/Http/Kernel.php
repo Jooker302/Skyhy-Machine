@@ -40,10 +40,15 @@ class Kernel extends HttpKernel
 
         'api' => [
             // \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
-            \Illuminate\Routing\Middleware\ThrottleRequests::class.':api',
+            \Illuminate\Routing\Middleware\ThrottleRequests::class . ':api',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
     ];
+    protected $routeMiddleware = [
+        // ...
+        'role' => \App\Http\Middleware\RoleMiddleware::class,
+    ];
+
 
     /**
      * The application's middleware aliases.
@@ -64,5 +69,7 @@ class Kernel extends HttpKernel
         'signed' => \App\Http\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        'checkRole' => \App\Http\Middleware\CheckRole::class,
+        //        'admin' => \App\Http\Middleware\AdminMiddleware::class,
     ];
 }

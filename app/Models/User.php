@@ -20,7 +20,10 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
+        'phone_number',
         'password',
+        'role_id'
+
     ];
 
     /**
@@ -46,5 +49,9 @@ class User extends Authenticatable
     public function role()
     {
         return $this->belongsTo(Role::class);
+    }
+    public function shiftRequests()
+    {
+        return $this->hasMany(ShiftRequest::class);
     }
 }

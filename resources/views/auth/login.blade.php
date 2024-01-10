@@ -78,7 +78,7 @@
 
 <head>
     @include('partials/head')
-    <title>Sign In | Dash Ui - Bootstrap 5 Admin Dashboard Template</title>
+    <title>Sign In </title>
 </head>
 
 <body class="bg-light">
@@ -92,12 +92,12 @@
                     <!-- Card body -->
                     <div class="card-body p-6">
                         <div class="mb-4">
-                            <a href="../index.html"><img src="../assets/images/brand/logo/logo-primary.svg" class="mb-2"
-                                    alt=""></a>
-                            <p class="mb-6">Please enter your user information.</p>
+                            {{-- <a href="../index.html"><img src="../assets/images/brand/logo/logo-primary.svg" class="mb-2"
+                                    alt=""></a> --}}
+                            <p class="mb-6" text-align:center>Login .</p>
                         </div>
                         <!-- Form -->
-                        <form method="POST" action="{{ route('login') }}">
+                        <form method="POST" action="{{ url('login_user') }}">
                             @csrf
                             <!-- Username -->
                             <div class="mb-3">
@@ -146,13 +146,13 @@
                                         <a href="{{ url('register') }}" class="btn btn-link">Create An
                                             Account </a>
                                     </div>
-                                    <div>
+                                    {{-- <div>
                                         @if (Route::has('password.request'))
                                             <a class="btn btn-link" href="{{ route('password.request') }}">
                                                 {{ __('Forgot Your Password?') }}
                                             </a>
                                         @endif
-                                    </div>
+                                    </div> --}}
 
                                 </div>
                             </div>

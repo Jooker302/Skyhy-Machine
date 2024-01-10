@@ -1,4 +1,4 @@
-{{-- @extends('layouts.app')
+{{-- {{-- @extends('layouts.app')
 
 @section('content')
 <div class="container">
@@ -83,7 +83,7 @@
 
 <head>
     @include('partials.head')
-    <title>Sign Up | Dash Ui - Bootstrap 5 Admin Dashboard Template</title>
+    <title>Sign Up |</title>
 </head>
 
 <body class="bg-light">
@@ -97,8 +97,8 @@
                     <!-- Card body -->
                     <div class="card-body p-6">
                         <div class="mb-4">
-                            <a href="../index.html"><img src="../assets/images/brand/logo/logo-primary.svg" class="mb-2"
-                                    alt=""></a>
+                            {{-- <a href="../index.html"><img src="../assets/images/brand/logo/logo-primary.svg" class="mb-2"
+                                    alt=""></a> --}}
                             <p class="mb-6">Please enter your user information.</p>
 
                         </div>
@@ -145,7 +145,15 @@
                             <div class="mb-3">
                                 <label for="confirm-password" class="form-label">Confirm
                                     Password</label>
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                                <input id="password-confirm" type="password" class="form-control"
+                                    name="password_confirmation" required autocomplete="new-password">
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirm-password" class="form-label">Phone
+                                    Number</label>
+                                <input id="phone-number" type="tel" class="form-control" name="phone_number"
+                                    required autocomplete="tel">
+
                             </div>
                             <!-- Checkbox -->
                             {{-- <div class="mb-3">
@@ -168,7 +176,7 @@
 
                             <div class="d-md-flex justify-content-between mt-4">
                                 <div class="mb-2 mb-md-0">
-                                    <a href="{{url('login')}}" class="fs-5">Already
+                                    <a href="{{ url('login') }}" class="fs-5">Already
                                         member? Login </a>
                                 </div>
                                 {{-- <div>
@@ -191,4 +199,4 @@
     @include('partials.scripts')
 </body>
 
-</html>
+</html> --}}
