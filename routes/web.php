@@ -62,5 +62,6 @@ Route::post('/delete-notification/{id}', [NotificationController::class, 'delete
 
 Route::get('/add_admin', [DashboardController::class, 'add_admin']);
 
+
 Route::get('/update_profile', [DashboardController::class, 'update_profile']);
 Route::post('/update_profile', [DashboardController::class, 'update_profile_data']);
